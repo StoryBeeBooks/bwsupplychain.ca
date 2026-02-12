@@ -395,10 +395,10 @@ footer {
     background-color: rgba(10, 25, 47, 0.75);
     padding: 40px;
     border-radius: 4px;
-    height: 420px;
     display: flex;
     align-items: center;
     justify-content: center;
+    align-self: stretch;
 }
 
 .philosophy-quote p {
