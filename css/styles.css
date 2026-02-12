@@ -307,22 +307,21 @@ footer {
     font-size: 0.9rem;
 }
 
-/* --- Feature Images --- */
-.feature-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.feature-image-section {
+/* --- Capabilities Section with Background Image --- */
+#capabilities.capabilities-with-image {
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 100%), url('https://assets.k12path.com/BWSupplyChain/1374.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
     padding: 0;
-    overflow: hidden;
 }
 
-.feature-image-section img {
-    width: 100%;
-    height: auto;
-    display: block;
+.capabilities-content-wrapper {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 60px 0;
+    position: relative;
+    z-index: 2;
 }
 
 /* --- Philosophy Section --- */
