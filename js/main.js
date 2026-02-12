@@ -1,3 +1,24 @@
+// WeChat Detection: Show image instead of video in WeChat browser
+function detectAndHandleWeChat() {
+    const isWeChat = /micromessenger/i.test(navigator.userAgent);
+    
+    if (isWeChat) {
+        // Hide videos, show images
+        const heroVideo = document.querySelector('.hero-video');
+        const showcaseVideo = document.querySelector('.showcase-hero-video');
+        const heroImage = document.querySelector('.hero-image-fallback');
+        const showcaseImage = document.querySelector('.showcase-image-fallback');
+        
+        if (heroVideo) heroVideo.style.display = 'none';
+        if (showcaseVideo) showcaseVideo.style.display = 'none';
+        if (heroImage) heroImage.style.display = 'block';
+        if (showcaseImage) showcaseImage.style.display = 'block';
+    }
+}
+
+// Call on page load
+detectAndHandleWeChat();
+
 document.addEventListener('DOMContentLoaded', () => {
     // Load Header
     fetch('components/header.html')
