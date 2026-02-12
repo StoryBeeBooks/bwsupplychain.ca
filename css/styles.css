@@ -314,14 +314,17 @@ footer {
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    padding: 0;
+    padding: 100px 0;
 }
 
 .capabilities-content-wrapper {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 60px 0;
     position: relative;
     z-index: 2;
+}
+
+#capabilities.capabilities-with-image .service-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
 }
 
 /* --- Philosophy Section --- */
