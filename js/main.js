@@ -20,21 +20,29 @@ function detectAndHandleWeChat() {
 detectAndHandleWeChat();
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Determine base path for components based on current directory
+    const pathname = window.location.pathname;
+    const isSubDirectory = /\/(showcase|faq|policy)\/$/.test(pathname);
+    const headerPath = isSubDirectory ? '../components/header.html' : 'components/header.html';
+    const footerPath = isSubDirectory ? '../components/footer.html' : 'components/footer.html';
+    
     // Load Header
-    fetch('components/header.html')
+    fetch(headerPath)
         .then(response => response.text())
         .then(data => {
             document.getElementById('header-placeholder').innerHTML = data;
             setActiveNavLink();
             initMobileMenu();
-        });
+        })
+        .catch(err => console.error('Failed to load header:', err));
 
     // Load Footer
-    fetch('components/footer.html')
+    fetch(footerPath)
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer-placeholder').innerHTML = data;
-        });
+        })
+        .catch(err => console.error('Failed to load footer:', err));
 
     // Scroll Reveal Observer
     const revealElements = document.querySelectorAll('.reveal');
