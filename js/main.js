@@ -8,11 +8,19 @@ function detectAndHandleWeChat() {
         const showcaseVideo = document.querySelector('.showcase-hero-video');
         const heroImage = document.querySelector('.hero-image-fallback');
         const showcaseImage = document.querySelector('.showcase-image-fallback');
+        const heroSection = document.querySelector('.hero');
+        const showcaseSection = document.querySelector('.showcase-hero');
         
         if (heroVideo) heroVideo.style.display = 'none';
         if (showcaseVideo) showcaseVideo.style.display = 'none';
-        if (heroImage) heroImage.style.display = 'block';
-        if (showcaseImage) showcaseImage.style.display = 'block';
+        if (heroImage) {
+            heroImage.style.display = 'block';
+            if (heroSection) heroSection.classList.add('using-fallback-image');
+        }
+        if (showcaseImage) {
+            showcaseImage.style.display = 'block';
+            if (showcaseSection) showcaseSection.classList.add('using-fallback-image');
+        }
     }
 }
 
