@@ -317,6 +317,25 @@ footer {
     padding: 100px 0;
 }
 
+.capabilities-header {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    padding: 40px;
+    border-radius: 4px;
+    color: var(--white) !important;
+}
+
+.capabilities-header .overline {
+    color: var(--secondary-color);
+}
+
+.capabilities-header h2 {
+    color: var(--white);
+}
+
+.capabilities-header p {
+    color: var(--white);
+}
+
 .capabilities-content-wrapper {
     position: relative;
     z-index: 2;
