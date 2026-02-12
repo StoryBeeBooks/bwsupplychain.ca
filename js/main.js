@@ -97,11 +97,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function setActiveNavLink() {
     const path = window.location.pathname;
-    const page = path.split('/').pop();
-
+    
     let activeId = 'nav-home';
-    if (page === 'showcase.html') activeId = 'nav-showcase';
+    if (path.includes('/showcase/')) activeId = 'nav-showcase';
+    if (path.includes('/faq/')) activeId = 'nav-faq';
+    if (path.includes('/policy/')) activeId = 'nav-policy';
 
+    // Remove active class from all nav links
+    document.querySelectorAll('[id^="nav-"]').forEach(link => {
+        link.classList.remove('active');
+    });
+
+    // Add active class to the current page's link
     const activeLink = document.getElementById(activeId);
     if (activeLink) activeLink.classList.add('active');
 }
