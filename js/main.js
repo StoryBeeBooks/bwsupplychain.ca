@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             document.getElementById('header-placeholder').innerHTML = data;
             setActiveNavLink();
+            initMobileMenu();
         });
 
     // Load Footer
@@ -89,5 +90,43 @@ function activateTab(tabId) {
         if (content.id === tabId) {
             content.classList.add('active');
         }
+    });
+}
+
+function initMobileMenu() {
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    if (!menuBtn || !navLinks) return;
+
+    // Create overlay element
+    const overlay = document.createElement('div');
+    overlay.classList.add('mobile-overlay');
+    document.body.appendChild(overlay);
+
+    function toggleMenu() {
+        menuBtn.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+    }
+
+    function closeMenu() {
+        menuBtn.classList.remove('active');
+        navLinks.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    menuBtn.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', closeMenu);
+
+    // Close on nav link click
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    // Close on resize to desktop
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) closeMenu();
     });
 }
