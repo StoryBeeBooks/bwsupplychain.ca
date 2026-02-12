@@ -13,98 +13,221 @@
     <header id="header-placeholder"></header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- Hero -->
         <section class="hero">
             <div class="container hero-content">
+                <span class="overline" style="color: var(--secondary-color); margin-bottom: 20px;">Global Supply Chain Solutions</span>
                 <h1>Strategic Levers for the Global Economy</h1>
                 <p>Connecting production capacity, real demand, and trade flows across continents. We build deeply connected logistics and economic systems.</p>
-                <a href="showcase.html" class="btn">Explore Capabilities</a>
+                <a href="#capabilities" class="btn">Explore Capabilities</a>
             </div>
         </section>
 
-        <!-- Intro Section -->
+        <!-- Intro -->
         <section class="section text-center">
-            <div class="container" style="max-width: 800px;">
-                <h2 style="font-size: 2.5rem; margin-bottom: 30px;">Experience Across Continents</h2>
-                <p style="font-size: 1.1rem; color: #4a5568;">
+            <div class="container" style="max-width: 780px;">
+                <span class="overline">Who We Are</span>
+                <h2>Experience Across Continents</h2>
+                <p class="lead">
                     With over 30 years of industrial development experience across Canada, the United States, China, Vietnam, Laos, India, Brazil, Argentina, Chile, and many other markets, BW has built a deeply connected logistics and economic system.
                 </p>
-                <div style="width: 100px; height: 3px; background-color: var(--secondary-color); margin: 40px auto 0;"></div>
+                <hr class="divider">
             </div>
         </section>
 
-        <!-- Services Preview -->
-        <section class="section" style="background-color: var(--bg-light);">
+        <!-- Stats Bar -->
+        <section class="stat-bar">
             <div class="container">
-                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-                    <!-- Service 1 -->
-                    <div class="service-card">
-                        <h3 class="mb-4">Product Sourcing & Contract Manufacturing</h3>
-                        <p class="mb-8" style="color: #718096; min-height: 80px;">
-                            From single components to integrated box-build assemblies, linking Asian manufacturing with American engineering.
-                        </p>
-                        <a href="showcase.html#sourcing" style="color: var(--secondary-color); font-weight: 600;">Learn More &rarr;</a>
+                <div class="stat-grid">
+                    <div class="stat-item reveal">
+                        <h3>30+</h3>
+                        <p>Years Experience</p>
                     </div>
-
-                    <!-- Service 2 -->
-                    <div class="service-card">
-                        <h3 class="mb-4">Commodity Sourcing & Market Access</h3>
-                        <p class="mb-8" style="color: #718096; min-height: 80px;">
-                            Structured, transparent paths to market. Connecting producers in the Americas to verified demand in Asia.
-                        </p>
-                        <a href="showcase.html#commodities" style="color: var(--secondary-color); font-weight: 600;">Learn More &rarr;</a>
+                    <div class="stat-item reveal">
+                        <h3>10+</h3>
+                        <p>Countries</p>
                     </div>
-
-                    <!-- Service 3 -->
-                    <div class="service-card">
-                        <h3 class="mb-4">China-Origin Logistics</h3>
-                        <p class="mb-8" style="color: #718096; min-height: 80px;">
-                            End-to-end logistics programs connecting production sites, warehouses, and ports into a single coordinated system.
-                        </p>
-                        <a href="showcase.html#logistics" style="color: var(--secondary-color); font-weight: 600;">Learn More &rarr;</a>
+                    <div class="stat-item reveal">
+                        <h3>3</h3>
+                        <p>Core Verticals</p>
+                    </div>
+                    <div class="stat-item reveal">
+                        <h3>E2E</h3>
+                        <p>End-to-End Service</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Philosophy Section -->
-        <section class="section">
+        <!-- Services Preview -->
+        <section id="capabilities" class="section section-alt">
+            <div class="container text-center" style="max-width: 680px; margin-bottom: 60px;">
+                <span class="overline">What We Do</span>
+                <h2>Our Capabilities</h2>
+                <p>Decades of cross-border industrial execution, enabling customers to treat Asia-based sourcing as an extension of their own operations.</p>
+            </div>
             <div class="container">
-                <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center;">
-                    <div style="background-color: #ddd; height: 400px; display: flex; align-items: center; justify-content: center; color: #777;">
-                        [Global Connected System Image]
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+                    <div class="service-card reveal">
+                        <span class="overline">Sourcing</span>
+                        <h3>Product Sourcing & Contract Manufacturing</h3>
+                        <p style="color: var(--text-light); min-height: 72px;">
+                            From single components to integrated box-build assemblies, linking Asian manufacturing with American engineering.
+                        </p>
+                        <a href="#sourcing" class="btn-ghost">Learn More &rarr;</a>
                     </div>
-                    <div>
-                        <h2 style="font-size: 2.2rem; margin-bottom: 25px;">A Connected Economic System</h2>
-                        <p class="mb-4" style="color: #4a5568;">
-                            Across product sourcing, commodity market access, and China-origin logistics, BW’s capabilities are rooted in decades of practical experience.
+                    <div class="service-card reveal">
+                        <span class="overline">Commodities</span>
+                        <h3>Commodity Sourcing & Market Access</h3>
+                        <p style="color: var(--text-light); min-height: 72px;">
+                            Structured, transparent paths to market. Connecting producers in the Americas to verified demand in Asia.
                         </p>
-                        <p class="mb-8" style="color: #4a5568;">
-                            We don't just move goods. We align sourcing structures with commercial strategy, use origin-based inventory to lower costs, and translate complex supply chains into manageable programs.
+                        <a href="#commodities" class="btn-ghost">Learn More &rarr;</a>
+                    </div>
+                    <div class="service-card reveal">
+                        <span class="overline">Logistics</span>
+                        <h3>China-Origin Logistics</h3>
+                        <p style="color: var(--text-light); min-height: 72px;">
+                            End-to-end logistics programs connecting production sites, warehouses, and ports into a single coordinated system.
                         </p>
-                        
+                        <a href="#logistics" class="btn-ghost">Learn More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capability 1: Sourcing -->
+        <section id="sourcing" class="capability-section">
+            <div class="container">
+                <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: start; gap: 60px;">
+                    <div class="reveal">
+                        <span class="overline">Capability</span>
+                        <h2>Product Sourcing & Contract Manufacturing</h2>
+                        <p class="text-gold" style="font-style: italic; font-size: 1.1rem; margin-bottom: 28px;">Integration from Pilot to Mass Volume</p>
+                        <p>
+                            BW supports customers across the Americas with product sourcing and contract manufacturing in Asia, from single components to fully integrated box-build assemblies.
+                        </p>
+                        <p>
+                            In markets defined by fast product cycles and evolving technologies, companies need supply solutions that can keep pace without sacrificing discipline. Our programs integrate directly with customers' local manufacturing and final assembly operations.
+                        </p>
+                    </div>
+                    <div class="reveal">
+                        <h3 style="margin-top: 0;">Core Capabilities</h3>
+                        <ul class="capability-list" style="grid-template-columns: 1fr;">
+                            <li>Designing sourcing programs aligning Asian manufacturing with American engineering</li>
+                            <li>Structuring durable cost models and supplier agreements</li>
+                            <li>Coordinating production planning to track real demand</li>
+                            <li>Integrating material flows into local manufacturing schedules</li>
+                            <li>Supplier identification, qualification, and ongoing development</li>
+                            <li>Quality management and in-process oversight</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capability 2: Commodities -->
+        <section id="commodities" class="capability-section section-alt">
+            <div class="container">
+                <div class="reveal" style="max-width: 900px;">
+                    <span class="overline">Capability</span>
+                    <h2>Commodity Sourcing & Market Access</h2>
+                    <p class="text-gold" style="font-style: italic; font-size: 1.1rem; margin-bottom: 28px;">Verified Demand, Executable Paths</p>
+                    <p>
+                        Commodity flows are increasingly shaped by policy changes, shifting trade frameworks, sustainability expectations, and risk management requirements.
+                    </p>
+                    <p>
+                        BW supports producers across the Americas by facilitating commodity supply opportunities aligned with <strong>verified</strong> demand in Asian markets, using a disciplined and commercially rigorous sourcing and market access process.
+                    </p>
+                </div>
+                <div class="reveal" style="margin-top: 48px;">
+                    <h3>Our Approach</h3>
+                    <ul class="capability-list">
+                        <li>Representing producers to qualified buyers with clear volume requirements</li>
+                        <li>Matching supply with confirmed, rather than speculative, demand</li>
+                        <li>Structuring commercial frameworks balancing risk and pricing</li>
+                        <li>Navigating regulatory and documentation requirements</li>
+                        <li>Improving visibility on volume commitments and logistics</li>
+                        <li>Building repeatable positions in key Asian markets</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capability 3: Logistics -->
+        <section id="logistics" class="capability-section">
+            <div class="container">
+                <div class="reveal" style="max-width: 900px; margin-bottom: 48px;">
+                    <span class="overline">Capability</span>
+                    <h2>China-Origin Logistics</h2>
+                    <p class="text-gold" style="font-style: italic; font-size: 1.1rem; margin-bottom: 28px;">Integrated Supply Services</p>
+                    <p>
+                        China remains a critical node in global trade. BW provides comprehensive China-origin logistics and integrated supply services that support both import and export flows. Our solutions are designed not just to move goods, but to give clients operational flexibility, cost control, and demand-driven delivery.
+                    </p>
+                </div>
+
+                <div class="grid reveal" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+                    <div class="feature-card">
+                        <h4>Warehousing & Consolidation</h4>
+                        <p>Large-scale origin warehousing, multi-supplier consolidation, and ambient/cold chain options.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Value-Added Services</h4>
+                        <p>Labeling, re-labeling, repacking, sorting, and kitting based on downstream requirements.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>International Execution</h4>
+                        <p>Ocean freight coordination, customs clearance, and exception management.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Demand-Driven Delivery</h4>
+                        <p>Release inventory as sales materialize, reducing destination-side holding costs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 60px;">
+                    <div style="background: linear-gradient(135deg, var(--primary-color) 0%, #1a365d 100%); height: 420px; display: flex; align-items: center; justify-content: center; padding: 40px;">
+                        <div style="text-align: center; color: white;">
+                            <p style="font-family: var(--font-serif); font-size: 2rem; color: var(--secondary-color); line-height: 1.3; font-style: italic; margin-bottom: 0;">&ldquo;We don&rsquo;t just move goods. We align sourcing structures with commercial strategy.&rdquo;</p>
+                        </div>
+                    </div>
+                    <div class="reveal">
+                        <span class="overline">Our Philosophy</span>
+                        <h2>A Connected Economic System</h2>
+                        <p>
+                            Across product sourcing, commodity market access, and China-origin logistics, BW's capabilities are rooted in decades of practical experience.
+                        </p>
+                        <p style="margin-bottom: 32px;">
+                            We align sourcing structures with commercial strategy, use origin-based inventory to lower costs, and translate complex supply chains into manageable programs.
+                        </p>
                         <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 20px;">
                             <div style="border-left: 3px solid var(--secondary-color); padding-left: 20px;">
-                                <h4 class="mb-2">Demand-Driven</h4>
-                                <p style="font-size: 0.9rem; color: #718096;">Inventory moves based on actual demand, not rigid patterns.</p>
+                                <h4>Demand-Driven</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 0;">Inventory moves based on actual demand, not rigid patterns.</p>
                             </div>
                             <div style="border-left: 3px solid var(--secondary-color); padding-left: 20px;">
-                                <h4 class="mb-2">Risk Managed</h4>
-                                <p style="font-size: 0.9rem; color: #718096;">Verification and transparency at every step of transaction.</p>
+                                <h4>Risk Managed</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 0;">Verification and transparency at every step of transaction.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <section id="contact" class="section text-center" style="background-color: var(--primary-color); color: white;">
+
+        <!-- CTA -->
+        <section id="contact" class="cta-section">
             <div class="container">
-                <h2 style="color: white; margin-bottom: 20px;">Ready to Optimize Your Supply Chain?</h2>
-                <p style="margin-bottom: 40px; color: #cbd5e0;">Contact our team to discuss your sourcing and logistics needs.</p>
-                <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
-                    <a href="mailto:Sales@bwsupplychain.ca" class="btn" style="background-color: white; color: var(--primary-color); border-color: white;">Email Sales</a>
-                    <a href="mailto:Richard.Jiang@bwsupplychain.ca" class="btn" style="background-color: transparent; border-color: white;">Email Richard</a>
+                <h2>Ready to Optimize Your Supply Chain?</h2>
+                <p>Contact our team to discuss your sourcing and logistics needs.</p>
+                <div class="cta-buttons">
+                    <a href="mailto:Sales@bwsupplychain.ca" class="btn">Email Sales</a>
+                    <a href="mailto:Richard.Jiang@bwsupplychain.ca" class="btn-outline">Email Richard</a>
                 </div>
             </div>
         </section>
