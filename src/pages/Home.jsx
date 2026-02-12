@@ -10,6 +10,7 @@ const Section = ({ children, className = "" }) => (
 );
 
 const Home = () => {
+  // Trigger fresh deployment
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
