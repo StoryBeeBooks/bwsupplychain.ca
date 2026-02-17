@@ -479,7 +479,7 @@ footer {
 /* --- Capabilities Icon Grid --- */
 .capabilities-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 28px;
     align-items: start;
 }
@@ -526,6 +526,12 @@ footer {
 .capability-card:focus .capability-desc {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Center CTA buttons inside service cards */
+.service-card .btn {
+    display: inline-block;
+    margin: 20px auto 0;
 }
 
 .hero h1 {
