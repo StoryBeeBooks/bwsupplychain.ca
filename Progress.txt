@@ -407,6 +407,14 @@ ADDITIONAL UPDATES (Feb 17, 2026)
 
 Status: All site pages verified for responsive behavior at major breakpoints (1024, 768, 480). Deployed to GitHub (main branch).
 
+FOOTER LINKS UPDATE (Feb 17, 2026)
+---------------------------------
+- Updated footer quick links to use directory-based routing (clean URLs).
+  * `Showcase` now links to `/showcase/` instead of `showcase.html`.
+  * `FAQ` and `Policies` now link to `/faq/` and `/policy/` respectively.
+
+Status: Footer updated and deployed.
+
 
 LESSON 10: GITHUB PAGES DEPLOYMENT IS AUTOMATIC
 -------------------------------------------------

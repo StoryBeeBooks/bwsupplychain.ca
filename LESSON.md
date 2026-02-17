@@ -71,3 +71,6 @@ bwsupplychain/
 Notes:
 - Header and footer are loaded dynamically via `js/main.js` using absolute paths (`/components/header.html`) so they render correctly from any subdirectory.
 - Mobile menu and responsive breakpoints are implemented in `css/styles.css` and `js/main.js` (hamburger toggle, overlay, auto-close on resize).
+ - Header and footer are loaded dynamically via `js/main.js` using absolute paths (`/components/header.html`) so they render correctly from any subdirectory.
+ - Footer quick links use directory-based routing (e.g., `/showcase/`, `/faq/`, `/policy/`) so they resolve correctly on GitHub Pages.
+ - Mobile menu and responsive breakpoints are implemented in `css/styles.css` and `js/main.js` (hamburger toggle, overlay, auto-close on resize).
