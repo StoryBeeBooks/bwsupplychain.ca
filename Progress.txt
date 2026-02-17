@@ -398,6 +398,17 @@ view. Zero scroll listener complexity.
 Outcome: Better performance, cleaner code, works on all modern browsers.
 
 ADDITIONAL UPDATES (Feb 17, 2026)
+
+- Added comprehensive Policies page with tabbed policy sections (Terms of Use, Privacy Policy, Disclaimer, Web Accessibility, Cookies Policy) and deployed at `/policies/` (committed and pushed).
+- Created /faq/ (FAQ) page and verified footer quick-link to `/faq/`.
+- Expanded the Market Access Model section on `/commodity-sourcing/` with full Overview, Core Stages (Demand Verification, Specification Alignment, Commercial Structuring, Supplier Selection, Execution Oversight), Application areas, and Value Delivered.
+- Set hero background images for three capability pages:
+  * `/product-sourcing/` — https://i.postimg.cc/K8yMShyk/people-white-isolating-costumes-working-laboratory.jpg
+  * `/commodity-sourcing/` — https://i.postimg.cc/RZXczCQT/508.jpg
+  * `/china-operations/` — https://i.postimg.cc/RZsnDsv5/2152021788.jpg
+- Removed several hero and in-page CTA buttons per request (commodity-model CTA; product-sourcing hero CTA; china-operations hero CTA).
+- Updated CSS to align service-card CTAs: made `.service-card` a column flex container and pushed `.service-card .btn` to the bottom so buttons align horizontally across cards.
+- All changes committed and pushed to `main` branch (multiple commits on Feb 17, 2026).
 =================================
 - Added dedicated capability pages: `/product-sourcing/`, `/commodity-sourcing/`, and `/china-operations/`.
 - Created a `/contact/` page and wired CTAs from the landing page to the new pages.

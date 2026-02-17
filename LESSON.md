@@ -68,6 +68,18 @@ bwsupplychain/
 └── contact/               <-- Contact page (index.html)
 ```
 
+## Recent Updates (Feb 17, 2026)
+
+- Added a tabbed Policies page at `/policies/` with Terms of Use, Privacy Policy, Disclaimer, Web Accessibility, and Cookies Policy.
+- Created and verified the FAQ page at `/faq/` and ensured footer quick-link points to `/faq/`.
+- Expanded the Market Access Model on `/commodity-sourcing/` with detailed stages (Demand Verification, Specification Alignment, Commercial Structuring, Supplier Selection, Execution Oversight) and application notes.
+- Updated hero background images for `/product-sourcing/`, `/commodity-sourcing/`, and `/china-operations/` to improve visual context (external CDN images used).
+- Removed hero CTA buttons from the three capability pages and the inline "View Market Access Model" CTA on `/commodity-sourcing/` per content direction.
+- Layout fix: updated `css/styles.css` so `.service-card` is a column flex container and `.service-card .btn` is pushed to the bottom; CTAs now align across cards.
+
+All updates have been committed and pushed to the `main` branch. Review the live site or repo to confirm content and visual updates.
+
+
 Notes:
 - Header and footer are loaded dynamically via `js/main.js` using absolute paths (`/components/header.html`) so they render correctly from any subdirectory.
 - Mobile menu and responsive breakpoints are implemented in `css/styles.css` and `js/main.js` (hamburger toggle, overlay, auto-close on resize).
