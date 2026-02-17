@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policies | BW Supply Chain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/png" href="https://assets.k12path.com/BWSupplyChain/Logo%20and%20Favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://assets.k12path.com/BWSupplyChain/Logo%20and%20Favicons/web-app-manifest-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://assets.k12path.com/BWSupplyChain/Logo%20and%20Favicons/web-app-manifest-512x512.png" sizes="512x512">
+    <link rel="apple-touch-icon" href="https://assets.k12path.com/BWSupplyChain/Logo%20and%20Favicons/apple-touch-icon.png">
+</head>
+<body>
+    <header id="header-placeholder"></header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="overline" style="color: var(--secondary-color);">Legal</span>
+                <h1>Policies</h1>
+                <p>Our terms, privacy practices, and legal disclosures.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="policy-container">
+                    <!-- Navigation Tabs -->
+                    <div class="policy-tabs">
+                        <button class="tab-btn" data-tab="terms">Terms of Use</button>
+                        <button class="tab-btn" data-tab="privacy">Privacy Policy</button>
+                        <button class="tab-btn" data-tab="disclaimer">Disclaimer</button>
+                        <button class="tab-btn" data-tab="accessibility">Web Accessibility</button>
+                        <button class="tab-btn" data-tab="cookies">Cookies Policy</button>
+                    </div>
+
+                    <!-- Content Area -->
+                    <div style="flex: 1; padding: 20px;">
+                        <div id="terms" class="tab-content">
+                            <h3>Terms of Use</h3>
+                            <p><strong>Effective Date: February 2026</strong></p>
+                            <p>By accessing or using this website and any associated platforms, materials, or services (collectively, the "Website"), you agree to comply with and be bound by these terms and conditions of use ("Terms"). These Terms apply to all visitors, users, and others who access or use the Website. If you do not agree to comply with these Terms, you are not authorized to access or use the Website, and you must immediately cease all use and exit the platform. BW Supply Chain ("we," "us," "our," or the "Organization") reserves the right to refuse service at any time and in our sole discretion.</p>
+                            <h4 style="margin-top: 32px;">License and Use Restrictions</h4>
+                            <p>The Website and all content are protected by applicable intellectual property laws. You are granted a limited license to access and use the Website for lawful purposes only. Unauthorized reproduction, distribution, modification, or use of Website content is prohibited.</p>
+                        </div>
+
+                        <div id="privacy" class="tab-content" style="display:none;">
+                            <h3>Privacy Policy</h3>
+                            <p><strong>Effective Date: February 2026</strong></p>
+                            <p>BW Supply Chain ("Organization," "we," "us," or "our") is committed to managing personal information in accordance with applicable privacy laws and regulations. This Privacy Policy outlines our practices regarding the collection, use, retention, sharing, and protection of information you provide or that we may collect through your interaction with our Website and associated services.</p>
+                        </div>
+
+                        <div id="disclaimer" class="tab-content" style="display:none;">
+                            <h3>Disclaimer</h3>
+                            <p><strong>Effective Date: February 2026</strong></p>
+                            <p>The information, content, materials, and resources available on this Website are provided on an "as-is" and "as-available" basis for general informational purposes only. We make no representations or warranties regarding the accuracy, completeness, or timeliness of any content.</p>
+                        </div>
+
+                        <div id="accessibility" class="tab-content" style="display:none;">
+                            <h3>Web Accessibility</h3>
+                            <p><strong>Effective Date: February 2026</strong></p>
+                            <p>BW Supply Chain is committed, to the extent practicable and consistent with applicable legal requirements and technical feasibility, to making our Website accessible to individuals with disabilities. Accessibility efforts are ongoing and may vary in scope, quality, and implementation.</p>
+                        </div>
+
+                        <div id="cookies" class="tab-content" style="display:none;">
+                            <h3>Cookies Policy</h3>
+                            <p><strong>Effective Date: February 2026</strong></p>
+                            <p>This Website may use cookies, pixels, web beacons, local storage, session storage, tracking tags, and similar technologies to collect, store, and transmit information about your interactions, preferences, and browsing behavior.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+    <script src="../js/main.js"></script>
+    <script>
+        // Simple tab behavior: show selected tab and hide others
+        document.addEventListener('DOMContentLoaded', function(){
+            const tabs = document.querySelectorAll('.tab-btn');
+            const contents = document.querySelectorAll('.tab-content');
+            function showTab(name){
+                contents.forEach(c=> c.style.display = (c.id === name ? '' : 'none'));
+                tabs.forEach(b=> b.classList.toggle('active', b.dataset.tab === name));
+            }
+            tabs.forEach(btn=> btn.addEventListener('click', () => showTab(btn.dataset.tab)));
+            // default tab
+            showTab('terms');
+        });
+    </script>
+</body>
+</html>
