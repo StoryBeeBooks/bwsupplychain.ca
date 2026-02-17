@@ -528,10 +528,15 @@ footer {
     transform: translateY(0);
 }
 
-/* Center CTA buttons inside service cards */
+/* Make service cards use column flex so CTAs align */
+.service-card {
+    display: flex;
+    flex-direction: column;
+}
+
 .service-card .btn {
-    display: inline-block;
-    margin: 20px auto 0;
+    align-self: center;
+    margin-top: auto;
 }
 
 .hero h1 {
