@@ -476,6 +476,58 @@ footer {
     z-index: 2;
 }
 
+/* --- Capabilities Icon Grid --- */
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 28px;
+    align-items: start;
+}
+
+.capability-card {
+    background: transparent;
+    text-align: center;
+    padding: 18px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.capability-card:focus,
+.capability-card:hover {
+    transform: translateY(-6px);
+}
+
+.capability-icon {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+}
+
+.capability-icon svg { width: 64px; height: 64px; display: block; }
+
+.capability-card h3 { margin: 0; font-size: 1.05rem; margin-bottom: 8px; }
+
+.capability-desc {
+    max-width: 340px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.22s ease, transform 0.22s ease;
+    color: var(--text-body);
+    font-size: 0.95rem;
+}
+
+.capability-card:hover .capability-desc,
+.capability-card:focus .capability-desc {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .hero h1 {
     font-size: 4rem;
     line-height: 1.08;
