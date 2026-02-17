@@ -86,3 +86,8 @@ Notes:
  - Header and footer are loaded dynamically via `js/main.js` using absolute paths (`/components/header.html`) so they render correctly from any subdirectory.
  - Footer quick links use directory-based routing (e.g., `/showcase/`, `/faq/`, `/policy/`) so they resolve correctly on GitHub Pages.
  - Mobile menu and responsive breakpoints are implemented in `css/styles.css` and `js/main.js` (hamburger toggle, overlay, auto-close on resize).
+
+5. **Legal & Compliance**
+    - **Protective Content:** Legal documents (Terms, Privacy, Disclaimers) are written with strong protective clauses ("As-Is", Limitation of Liability, Indemnification) to minimize organizational risk.
+    - **Modular Structure:** Legal content is organized in deeply nested tabs within `/policy/index.html` for clean UX, separating distinct legal areas without cluttering navigation.
+    - **Qualified Commitments:** Operational promises (e.g., accessibility, data retention) are qualified with phrases like "reasonable efforts" and "to the extent practicable" to avoid strict liability.

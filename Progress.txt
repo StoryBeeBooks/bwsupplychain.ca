@@ -624,6 +624,17 @@ Next Session TODO:
 - Monitor for any reported issues from users
 - Prepare to add more pages if needed
 
+
+LEGAL DOCUMENTATION OVERHAUL (LATEST)
+=====================================
+- **Professional Rewrite:** Completely rewrote all sections of the Policy page (`policy/index.html`).
+  - **Terms of Use:** Added strict limitation of liability ($100 cap), indemnification clauses, and "As-Is" disclaimers.
+  - **Privacy Policy:** Updated to reflect professional standards with specific contact information (`Sales@` and `Richard.Jiang@`).
+  - **Disclaimer:** Rewrote to include comprehensive disclaimers for professional advice, external links, and errors/omissions.
+  - **Web Accessibility:** Added "As-Is" and "reasonable efforts" clauses to protect against accessibility lawsuits.
+  - **Cookies Policy:** detailed cookie usage, third-party disclaimers, and user control limitations.
+- **Goal:** Ensure maximum legal protection for BW Supply Chain while maintaining a professional appearance.
+
 STATUS: PRODUCTION READY ✓
 All core functionality implemented and tested.
 Website is stable and deployable.
