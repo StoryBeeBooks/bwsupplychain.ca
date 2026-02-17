@@ -397,6 +397,16 @@ Result: All elements with class="reveal" fade in smoothly when scrolled into
 view. Zero scroll listener complexity.
 Outcome: Better performance, cleaner code, works on all modern browsers.
 
+ADDITIONAL UPDATES (Feb 17, 2026)
+=================================
+- Added dedicated capability pages: `/product-sourcing/`, `/commodity-sourcing/`, and `/china-operations/`.
+- Created a `/contact/` page and wired CTAs from the landing page to the new pages.
+- Updated header navigation to include the new capability pages and `Contact`.
+- Improved header/footer loading by switching to absolute component paths so header/footer render correctly from any subdirectory.
+- Verified mobile behavior across pages: hamburger menu, overlay, and nav links function at <=768px.
+
+Status: All site pages verified for responsive behavior at major breakpoints (1024, 768, 480). Deployed to GitHub (main branch).
+
 
 LESSON 10: GITHUB PAGES DEPLOYMENT IS AUTOMATIC
 -------------------------------------------------

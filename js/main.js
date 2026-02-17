@@ -28,11 +28,10 @@ function detectAndHandleWeChat() {
 detectAndHandleWeChat();
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Determine base path for components based on current directory
-    const pathname = window.location.pathname;
-    const isSubDirectory = /\/(showcase|faq|policy)\/$/.test(pathname);
-    const headerPath = isSubDirectory ? '../components/header.html' : 'components/header.html';
-    const footerPath = isSubDirectory ? '../components/footer.html' : 'components/footer.html';
+    // Use absolute paths for shared components so pages in subdirectories
+    // can always fetch the header/footer correctly regardless of depth.
+    const headerPath = '/components/header.html';
+    const footerPath = '/components/footer.html';
     
     // Load Header
     fetch(headerPath)
@@ -110,6 +109,10 @@ function setActiveNavLink() {
     if (path.includes('/showcase/')) activeId = 'nav-showcase';
     if (path.includes('/faq/')) activeId = 'nav-faq';
     if (path.includes('/policy/')) activeId = 'nav-policy';
+    if (path.includes('/product-sourcing')) activeId = 'nav-product';
+    if (path.includes('/commodity-sourcing')) activeId = 'nav-commodity';
+    if (path.includes('/china-operations')) activeId = 'nav-china';
+    if (path.includes('/contact')) activeId = 'nav-contact';
 
     // Remove active class from all nav links
     document.querySelectorAll('[id^="nav-"]').forEach(link => {

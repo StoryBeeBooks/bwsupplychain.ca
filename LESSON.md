@@ -46,20 +46,28 @@ It usually takes about 1-2 minutes for GitHub to update.
 - This site uses a small script to load the header and footer. If you are viewing the file locally by double-clicking `index.html`, Chrome might block this for security (CORS policy).
 - **Solution**: It will work perfectly once uploaded to GitHub. To preview locally, you need a "Live Server" extension in VS Code.
 
-## Project Structure
-This is how your files are organized now:
+## Project Structure (current)
+This is how your files are organized now (directory-based routing):
 
 ```
 bwsupplychain/
-├── components/       <-- Reusable parts
+├── components/            <-- Reusable parts (header/footer)
 │   ├── header.html
 │   └── footer.html
-├── css/             <-- Styles
+├── css/                   <-- Styles
 │   └── styles.css
-├── js/              <-- Scripts
+├── js/                    <-- Scripts
 │   └── main.js
-├── index.html       <-- Home Page
-├── showcase.html    <-- Capabilities Page
-├── faq.html         <-- FAQ Page
-└── policy.html      <-- Legal/Policy Page
+├── index.html             <-- Home Page
+├── showcase/              <-- Showcase directory (index.html)
+├── faq/                   <-- FAQ directory (index.html)
+├── policy/                <-- Policy directory (index.html)
+├── product-sourcing/      <-- Product Sourcing page (index.html)
+├── commodity-sourcing/    <-- Commodity Sourcing page (index.html)
+├── china-operations/      <-- China Operations page (index.html)
+└── contact/               <-- Contact page (index.html)
 ```
+
+Notes:
+- Header and footer are loaded dynamically via `js/main.js` using absolute paths (`/components/header.html`) so they render correctly from any subdirectory.
+- Mobile menu and responsive breakpoints are implemented in `css/styles.css` and `js/main.js` (hamburger toggle, overlay, auto-close on resize).
