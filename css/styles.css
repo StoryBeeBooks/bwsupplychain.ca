@@ -470,6 +470,15 @@ footer {
     background-color: rgba(0, 0, 0, 0.45);
 }
 
+/* Darker hero overlay for specific pages */
+.dark-hero .hero .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+.dark-hero .hero.using-fallback-image .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
 .hero-content {
     max-width: 720px;
     position: relative;
